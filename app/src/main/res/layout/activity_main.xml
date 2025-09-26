@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,12 +8,33 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="CHƯƠNG TRÌNH WEEK 5 CỦA GNOURT!"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnScreen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/title"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#9A62F0"
+        android:text="Màn hình 1" />
+
+    <Button
+        android:id="@+id/btnScreen2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3BC4FD"
+        android:textColor="@color/black"
+        android:text="Màn hình 2" />
+
+</RelativeLayout>
